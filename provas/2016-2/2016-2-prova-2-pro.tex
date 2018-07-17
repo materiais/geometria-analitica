@@ -1,0 +1,141 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{cmap} % Makes the PDF copiable. See http://tex.stackexchange.com/a/64198/25761
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{textcomp} % \degree
+\usepackage{gensymb} % \degree
+\usepackage[usenames,svgnames,dvipsnames]{xcolor}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage[margin=2cm]{geometry}
+
+\hypersetup{
+    colorlinks = true,
+    allcolors = {blue}
+}
+
+% TODO: Consider using exsheets
+% http://linorg.usp.br/CTAN/macros/latex/contrib/exsheets/exsheets_en.pdf
+%
+% http://ctan.org/tex-archive/macros/latex/contrib/exercise/
+% Options: answerdelayed,lastexercise,noanswer
+\usepackage[answerdelayed,lastexercise]{exercise}
+
+\addto\captionsbrazil{%
+\def\listexercisename{Lista de exerc\'icios}%
+\def\ExerciseName{Exerc\'icio}%
+\def\AnswerName{Solu\c{c}\~ao do exerc\'icio}%
+\def\ExerciseListName{Ex.}%
+\def\AnswerListName{Solu\c{c}\~ao}%
+\def\ExePartName{Parte}%
+\def\ArticleOf{de\ }%
+}
+
+\renewcommand{\ExerciseHeaderTitle}{(\ExerciseTitle)\ }
+\renewcommand{\ExerciseListHeader}{%\ExerciseHeaderDifficulty%
+\textbf{%\ExerciseListName\
+\ExerciseHeaderNB.\ %
+%\ --- \ 
+\ExerciseHeaderTitle}%
+%\ExerciseHeaderOrigin
+\ignorespaces}
+\renewcommand{\AnswerListHeader}{\textbf{\ExerciseHeaderNB.\ (\AnswerListName)\ }}
+
+\newcommand{\fixme}{{\color{red}(...)}}
+
+\renewcommand{\theenumi}{\alph{enumi}}
+\renewcommand\labelenumi{(\theenumi) }
+
+\newcommand*\tipo{Prova II}
+\newcommand*\turma{PRO112-01U}
+\newcommand*\disciplina{GAN0001}
+\newcommand*\eu{Helder G. G. de Lima}
+\newcommand*\data{29/09/2016}
+
+\author{\eu}
+\title{\tipo - \disciplina}
+\date{\data}
+
+\begin{document}
+\thispagestyle{empty}
+\newgeometry{margin=2cm,bottom=0.5cm}
+\begin{center}
+\includegraphics[width=9.0cm]{marca} \\
+\textbf{\tipo\ (\disciplina / \turma)} \\
+Prof. \eu\footnote{
+Este é um material de acesso livre distribuído sob os termos da licença \href{https://creativecommons.org/licenses/by-sa/4.0/deed.pt_BR}{Creative Commons BY-SA 4.0}.}
+\end{center}
+
+\noindent Nome do(a) aluno(a): \underline{\hspace{9,7cm}} Data: \underline{\data}
+
+%\section*{Instruções}
+\begin{center}\fbox{
+\begin{minipage}{14cm}
+
+{\footnotesize
+\begin{itemize}
+\renewcommand{\theenumi}{\Roman{enumi}}
+\item Identifique-se em todas as folhas.
+\item Mantenha o celular e os demais equipamentos eletrônicos desligados durante a prova.
+\item Escolha os itens a resolver de modo a totalizar apenas 10 pontos.
+%\rule{3cm}{0.01cm}
+\end{itemize}
+}
+
+\end{minipage}
+}
+\end{center}
+
+%\section*{Questões}
+\begin{ExerciseList}
+\Exercise%[title={6,0}]
+Considere as seguintes retas:
+\[
+r_1: \begin{cases}
+x=-y+1\\
+z=-\frac{3}{2}y+2,
+\end{cases}
+\qquad
+r_2: \begin{cases}
+x=-4t\\
+y=1+4t\\
+z=3-6t
+\end{cases}
+\qquad\text{e}\qquad
+r_3: \dfrac{x-6}{4} = \dfrac{y+3}{-2} = \dfrac{z-9}{3}.
+\]
+\begin{enumerate}
+\item \textbf{(1,0)} Em que ponto cada reta intersecta o plano $xOy$?
+\item \textbf{(1,0)} Que reta é paralela a uma das outras retas? Qual é a distância entre elas?
+\item \textbf{(2,0)} Há duas retas concorrentes? Se houver, em que ponto se intersectam?
+\item \textbf{(2,0)} Duas das retas são reversas? Em caso afirmativo, qual é a distância que as separa?
+\end{enumerate}
+\Answer \fixme
+
+\Exercise%[title={6,0}]
+Considerando os planos $\pi_1: 3x + 6y - 3z + 15 = 0$ e $\pi_2: -x + y - 2z - 2 = 0$, determine:
+\begin{enumerate}
+\item \textbf{(1,0)} Qual dos planos contém $Q(-1,5,2)$, e qual é a distância entre $Q$ e o outro plano.
+\item \textbf{(1,0)} O ângulo entre $\pi_1$ e $\pi_2$.
+\item \textbf{(1,0)} As equações reduzidas da reta $s_1$ definida pela interseção de $\pi_1$ com o plano $xOz$.
+\item \textbf{(1,0)} As equações paramétricas da reta $s_2$ definida pela interseção de $\pi_2$ com o plano $xOz$.
+\item \textbf{(1,0)} O ângulo entre as retas $s_1$ e $s_2$ obtidas anteriormente.
+\item \textbf{(2,0)} O volume do tetraedro limitado pelo plano $\pi_1$ e os $3$ planos coordenados.
+\end{enumerate}
+\Answer \fixme
+\end{ExerciseList}
+
+\begin{center}
+BOA PROVA!
+\end{center}
+
+%\newpage
+\restoregeometry
+%\section*{Respostas}
+%\shipoutAnswer
+\end{document}

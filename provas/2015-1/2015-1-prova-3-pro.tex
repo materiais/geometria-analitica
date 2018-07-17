@@ -1,0 +1,126 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{cmap} % Makes the PDF copiable. See http://tex.stackexchange.com/a/64198/25761
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{textcomp} % \degree
+\usepackage{gensymb} % \degree
+\usepackage[usenames,svgnames,dvipsnames]{xcolor}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{systeme}
+\usepackage[margin=2cm]{geometry}
+
+\hypersetup{
+    colorlinks = true,
+    allcolors = {blue}
+}
+
+\newcommand{\vect}[1]{\overrightarrow{#1}}
+\newcommand{\norm}[1]{\left|\left|{#1}\right|\right|}
+
+\newcommand*\tipo{PROVA III}
+\newcommand*\turma{TURMA C}
+\newcommand*\disciplina{GAN0001}
+\newcommand*\nome{GEOMETRIA ANALÍTICA}
+\newcommand*\eu{Helder G. G. de Lima}
+\newcommand*\data{27/05/2015}
+
+\author{\eu}
+\title{\tipo - \disciplina}
+\date{\data}
+
+\begin{document}
+\thispagestyle{empty}
+\newgeometry{margin=2cm,bottom=0.5cm}
+\begin{center}
+\includegraphics{udesc_joinville_cabecalho.pdf}
+\\ Prof. \eu\footnote{
+Este é um material de acesso livre distribuído sob os termos da licença \href{https://creativecommons.org/licenses/by-sa/4.0/deed.pt_BR}{Creative Commons BY-SA 4.0}.}
+
+\noindent\begin{tabular}{l c c r}
+  \textbf{\disciplina}
+& \textbf{\tipo}
+& \textbf{\data}
+& \textbf{\turma}
+\end{tabular}\vspace{-0.3cm}
+\noindent\rule{17cm}{0.01cm}
+\end{center}
+
+\noindent Nome do aluno: \rule{14cm}{0.01cm}
+
+\section*{Instruções}
+
+\begin{enumerate}
+\renewcommand{\theenumi}{\Roman{enumi}}
+\item Identifique-se em todas as folhas.
+\item Mantenha o celular e os demais equipamentos eletrônicos desligados durante a prova.
+\item Justifique cada resposta com cálculos ou argumentos baseados na teoria estudada.
+\item Escolha \textsc{\textbf{uma}} questão para \textsc{\textbf{não}} fazer (ela não será corrigida): \rule{3cm}{0.01cm}
+\end{enumerate}
+
+\section*{Questões}
+
+\begin{enumerate}
+\item (2,0 pontos) Sejam $A=(3,3,3)$, $B=(-3,-3,3)$, $C=(3,-3,-3)$ e $D=(-3,3,-3)$. Qual é a altura do tetraedro com vértices $A$, $B$, $C$ e $D$, relativa à base $BCD$?
+
+\item (2,0 pontos) Qual é a distância entre a reta
+$r: \frac{x}{4} = \frac{y-1/2}{3} = \frac{z-3/2}{2}$ e
+$s: \frac{x}{-4} = \frac{y+1/2}{6} = z+1$?
+
+\item (2,0 pontos) Calcule a distância entre $r$ e $s$, sendo:
+\[
+r: \begin{cases}
+y = \frac{x}{2} - 3\\
+z= x - 4 \qquad
+\end{cases}
+s: \frac{x-1}{2} = y = \frac{z-4}{2}
+\]
+
+\item (2,0 pontos) Determine a equação, o foco e a reta diretriz da parábola cujo vértice é o ponto $(3,-1)$, cujo eixo de simetria é a reta $y+1=0$ e que passa pelo ponto $(-6,5)$.
+
+\item (2,0 pontos) Verifique qual das seguintes elipses possui a maior excentricidade:
+\begin{multicols}{2}
+\begin{enumerate}
+%\item $16(y+5)^2-9x^2+36x-37 = 0$
+\item $9 x^2-72 x+25 y^2+50 y-56 = 0$
+\item $\frac{(x-4)^2}{25} + \frac{(y+1)^2}{169} = 1$
+\end{enumerate}
+\end{multicols}
+
+\item (2,0 pontos) Obtenha os focos e a equação da hipérbole que possui vértices $A_1=(-2,1)$ e $A_2 = (4,1)$, e que contém o ponto $P = (-5,4)$.
+\end{enumerate}
+
+\section*{Lembrete}
+%Nas fórmulas a seguir, $P_0$, $P_1$, $P_2$ são pontos, $r$, $s$ são retas, $\vec{u}$, $\vec{v}$ são vetores e $\pi$ é um plano:
+\begin{itemize}\footnotesize
+\item $d(P_1, P_2) =
+\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2 + (z_2-z_1)^2}$
+\begin{multicols}{3}
+\item $d(P_0, r) =
+\frac{ \norm{ \vec{v} \times \vect{P_0P_1} } }
+     { \norm{\vec{v}} }$
+\item $d(r, s) =
+\frac{ \left| ( \vec{u}, \vec{v}, \vect{P_1P_2} ) \right| }
+     { || \vec{u} \times \vec{v} || }$
+\item $d(P_0, \pi) =
+\frac{ \left| ax_0 + by_0 + cz_0 + d \right| }
+     { \sqrt{a^2 + b^2 + c^2} }$
+\item $(x-h)^2 = 2p(y-k)$
+\item $(y-k)^2 = 2p(x-h)$
+\item $\dfrac{(x-h)^2}{a^2} + \dfrac{(y-k)^2}{b^2} = 1$
+\item $\dfrac{(x-h)^2}{b^2} + \dfrac{(y-k)^2}{a^2} = 1$
+\item $\dfrac{(x-h)^2}{a^2} - \dfrac{(y-k)^2}{b^2} = 1$
+\item $\dfrac{(y-k)^2}{a^2} - \dfrac{(x-h)^2}{b^2} = 1$
+\end{multicols}
+\end{itemize}
+
+%\newpage
+\restoregeometry
+%\section*{Respostas e observações}
+\end{document}

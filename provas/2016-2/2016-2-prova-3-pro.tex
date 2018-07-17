@@ -1,0 +1,139 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{cmap} % Makes the PDF copiable. See http://tex.stackexchange.com/a/64198/25761
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{textcomp} % \degree
+\usepackage{gensymb} % \degree
+\usepackage[usenames,svgnames,dvipsnames]{xcolor}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage[margin=2cm]{geometry}
+
+\hypersetup{
+    colorlinks = true,
+    allcolors = {blue}
+}
+
+% TODO: Consider using exsheets
+% http://linorg.usp.br/CTAN/macros/latex/contrib/exsheets/exsheets_en.pdf
+%
+% http://ctan.org/tex-archive/macros/latex/contrib/exercise/
+% Options: answerdelayed,lastexercise,noanswer
+\usepackage[answerdelayed,lastexercise]{exercise}
+
+\addto\captionsbrazil{%
+\def\listexercisename{Lista de exerc\'icios}%
+\def\ExerciseName{Exerc\'icio}%
+\def\AnswerName{Solu\c{c}\~ao do exerc\'icio}%
+\def\ExerciseListName{Ex.}%
+\def\AnswerListName{Solu\c{c}\~ao}%
+\def\ExePartName{Parte}%
+\def\ArticleOf{de\ }%
+}
+
+\renewcommand{\ExerciseHeaderTitle}{(\ExerciseTitle)\ }
+\renewcommand{\ExerciseListHeader}{%\ExerciseHeaderDifficulty%
+\textbf{%\ExerciseListName\
+\ExerciseHeaderNB.\ %
+%\ --- \ 
+\ExerciseHeaderTitle}%
+%\ExerciseHeaderOrigin
+\ignorespaces}
+\renewcommand{\AnswerListHeader}{\textbf{\ExerciseHeaderNB.\ (\AnswerListName)\ }}
+
+\newcommand{\fixme}{{\color{red}(...)}}
+\newcommand*\sen{\operatorname{sen}}
+
+\renewcommand{\theenumi}{\alph{enumi}}
+\renewcommand\labelenumi{(\theenumi) }
+
+\newcommand*\tipo{Prova III}
+\newcommand*\turma{PRO112-01U}
+\newcommand*\disciplina{GAN0001}
+\newcommand*\eu{Helder G. G. de Lima}
+\newcommand*\data{01/11/2016}
+
+\author{\eu}
+\title{\tipo - \disciplina}
+\date{\data}
+
+\begin{document}
+\thispagestyle{empty}
+\newgeometry{margin=2cm,bottom=0.5cm}
+\begin{center}
+\includegraphics[width=9.0cm]{marca} \\
+\textbf{\tipo\ (\disciplina / \turma)} \\
+Prof. \eu\footnote{
+Este é um material de acesso livre distribuído sob os termos da licença \href{https://creativecommons.org/licenses/by-sa/4.0/deed.pt_BR}{Creative Commons BY-SA 4.0}.}
+\end{center}
+
+\noindent Nome do(a) aluno(a): \underline{\hspace{9,7cm}} Data: \underline{\data}
+
+%\section*{Instruções}
+\begin{center}\fbox{
+\begin{minipage}{14cm}
+
+{\footnotesize
+\begin{itemize}
+\renewcommand{\theenumi}{\Roman{enumi}}
+\item Identifique-se em todas as folhas.
+\item Mantenha o celular e os demais equipamentos eletrônicos desligados durante a prova.
+\item Escolha os itens a resolver de modo a totalizar até 10,0 pontos.
+\end{itemize}
+}
+
+\end{minipage}
+}
+\end{center}
+
+%\section*{Questões}
+\begin{ExerciseList}
+\Exercise[title={2,0}] Uma elipse possui o centro em $C=(-3,1)$, um foco em $F_1=(-3,-2)$ e um vértice em $A_1=(-3,-3)$. Determine a equação da elipse, sua excentricidade e o comprimento de cada um de seus eixos.
+\Answer \fixme
+
+\Exercise%[title={2,0}]
+Uma hipérbole que passa pelo ponto $A=(4,0)$ possui vértices $A_1=(0,-2)$ e $A_2=(2, -2)$.
+\begin{enumerate}
+\item \textbf{(1,0)} Determine a equação reduzida da hipérbole.
+\item \textbf{(1,0)} Obtenha as equações das assíntotas, e utilize-as para esboçar a hipérbole.
+\end{enumerate}
+\Answer \fixme
+
+\Exercise%[title={2,0}]
+Se uma cônica é representada pela equação $2x^2 - 4x + \dfrac{9}{8}y^2 + 9y + 2 = 0$, obtenha:
+\begin{enumerate}
+\item \textbf{(0,4)} A equação reduzida da cônica.
+\item \textbf{(0,8)} A excentricidade, as coordenadas do centro, foco(s) e vértice(s), e as equações das assíntotas ou da diretriz (conforme o tipo de curva encontrado).
+\item \textbf{(0,8)} Um esboço da curva coerente com os dados obtidos acima.
+\end{enumerate}
+\Answer \fixme
+
+\Exercise[title={2,0}] Esboce a curva $r=6\cos(2\theta)$, exibindo as coordenadas polares de 7 pontos distintos e explicando se há algum tipo de simetria.
+\Answer \fixme
+
+\Exercise[title={2,0}] Esboce a curva $r=3-3\cos \left(\theta \right)$, exibindo as coordenadas polares de 7 dos seus pontos e explicando se há algum tipo de simetria.
+\Answer \fixme
+
+\Exercise%[title={2,0}]
+Considere a curva cujos pontos $P=(r, \theta)$, em coordenadas polares, satisfazem $r = \dfrac{3}{1-\sen{\theta}}$.
+\begin{enumerate}
+\item \textbf{(1,0)} Obtenha uma equação equivalente (simplificada) em coordenadas cartesianas $(x,y)$.
+\item \textbf{(1,0)} Esboce a curva, exibindo as coordenadas polares de pelo menos 5 pontos utilizados.
+\end{enumerate}
+\Answer \fixme
+\end{ExerciseList}
+
+\begin{center}
+BOA PROVA!
+\end{center}
+
+%\newpage
+\restoregeometry
+%\section*{Respostas}
+%\shipoutAnswer
+\end{document}

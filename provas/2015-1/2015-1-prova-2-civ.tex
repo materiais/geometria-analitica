@@ -1,0 +1,292 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{cmap} % Makes the PDF copiable. See http://tex.stackexchange.com/a/64198/25761
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{textcomp} % \degree
+\usepackage{gensymb} % \degree
+\usepackage[usenames,svgnames,dvipsnames]{xcolor}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{systeme}
+\usepackage[margin=2cm]{geometry}
+
+\hypersetup{
+    colorlinks = true,
+    allcolors = {blue}
+}
+
+\newcommand{\vect}[1]{\overrightarrow{#1}}
+\newcommand{\norm}[1]{\left|\left|{#1}\right|\right|}
+
+\newcommand*\tipo{PROVA II}
+\newcommand*\turma{TURMA E}
+\newcommand*\disciplina{GAN0001}
+\newcommand*\nome{GEOMETRIA ANALÍTICA}
+\newcommand*\eu{Helder G. G. de Lima}
+\newcommand*\data{30/04/2015}
+
+\author{\eu}
+\title{\tipo - \disciplina}
+\date{\data}
+
+\begin{document}
+\thispagestyle{empty}
+\newgeometry{margin=2cm,bottom=0.5cm}
+\begin{center}
+\includegraphics{udesc_joinville_cabecalho.pdf}
+\\ Prof. \eu\footnote{
+Este é um material de acesso livre distribuído sob os termos da licença \href{https://creativecommons.org/licenses/by-sa/4.0/deed.pt_BR}{Creative Commons BY-SA 4.0}.}
+
+\noindent\begin{tabular}{l c c r}
+  \textbf{\disciplina}
+& \textbf{\tipo}
+& \textbf{\data}
+& \textbf{\turma}
+\end{tabular}\vspace{-0.3cm}
+\noindent\rule{17cm}{0.01cm}
+\end{center}
+
+\noindent Nome do aluno: \rule{14cm}{0.01cm}
+
+\section*{Instruções}
+
+\begin{enumerate}
+\renewcommand{\theenumi}{\Roman{enumi}}
+\item Identifique-se em todas as folhas.
+\item Mantenha o celular e os demais equipamentos eletrônicos desligados durante a prova.
+\item Justifique cada resposta com cálculos ou argumentos baseados na teoria estudada.
+\item Escolha \textsc{\textbf{uma}} questão para \textsc{\textbf{não}} fazer (ela não será corrigida): \rule{3cm}{0.01cm}
+\end{enumerate}
+
+\section*{Questões}
+
+\begin{enumerate}
+\item (2,0 pontos) Dados $\vec{u}=(-1,3,0)$, $\vec{v}=(0,-4,1)$ e $\vec{w}=(1,0,1)$, calcule
+\[
+  \vec{u} \times (\vec{v} \times \vec{w}) \, + \,
+  \vec{v} \times (\vec{w} \times \vec{u}) \, + \,
+  \vec{w} \times (\vec{u} \times \vec{v}).
+\]
+
+\item (2,0 pontos) Encontre equações paramétricas da reta $r$ dada pela interseção do plano $-2x + 8y - 6z + 8 = 0$ com o plano $-x + 4y + 8z + 4 = 0$.
+
+\item (2,0 pontos) Seja $s$ a reta $\frac{x - 2}{4} = \frac{y - 3}{-3} = z + 1$. Dê um exemplo (com equações paramétricas) de uma reta $r_1 // s$, de uma reta $r_2$ concorrente com $s$ e de uma reta $r_3$ reversa com $s$ (explique suas escolhas).
+
+
+\item (2,0 pontos) Calcule o ângulo entre a reta $r : \begin{cases}
+y = -x -1 \\
+z = 2
+\end{cases}$ e $s: x+1 = \dfrac{y-1}{-2} = z-1$.
+
+\item (2,0 pontos) Forneça uma equação geral do plano que passa pelo ponto médio de $A = (-2,5,1)$ e $B = (4,-1,-7)$, e que além disso contém a reta $x = \frac{y}{-1} = z$.
+
+\item (2,0 pontos) Determine as equações reduzidas (com variável independente $x$) da reta $r$ que passa por $A = (1,2,4)$ e que é perpendicular ao plano $\frac{x}{2} + y - 2z - 6 = 0$.
+\end{enumerate}
+
+\section*{Lembrete}
+Se $\vec{u} = (a,b,c)$ então $\norm{\vec{u}} = \sqrt{a^2 + b^2 + c^2}$. Dados $\vec{v} = (a_1, b_1, c_1)$ e $\vec{w} = (a_2, b_2, c_2)$, tem-se:
+
+\begin{itemize}
+\item $\vec{v} \cdot \vec{w}
+= a_1 a_2 + b_1 b_2 + c_1 c_2
+= \norm{\vec{v}} \cdot \norm{\vec{w}} \cdot \cos(\theta)
+$, onde $\theta$ é o ângulo entre os vetores $\vec{v}$ e $\vec{w}$.
+\item $\vec{v} \times \vec{w}
+= \begin{vmatrix}
+\vec{i} & \vec{j} & \vec{k} \\
+a_1 & b_1 & c_1\\
+a_2 & b_2 & c_2
+\end{vmatrix}$
+\item $(\vec{u}, \vec{v}, \vec{w})
+= \vec{u} \cdot \vec{v} \times \vec{w}
+= \begin{vmatrix}
+a   & b   & c \\
+a_1 & b_1 & c_1 \\
+a_2 & b_2 & c_2
+\end{vmatrix}$
+\end{itemize}
+
+\newpage
+\restoregeometry
+\section*{Respostas e observações}
+
+\begin{enumerate}
+\item \textit{Dados $\vec{u}=(-1,3,0)$, $\vec{v}=(0,-4,1)$ e $\vec{w}=(1,0,1)$, calcule
+\[
+  \vec{u} \times (\vec{v} \times \vec{w}) \, + \,
+  \vec{v} \times (\vec{w} \times \vec{u}) \, + \,
+  \vec{w} \times (\vec{u} \times \vec{v}).
+\]
+}
+Levando em conta que $\vec{u} \times (\vec{v} \times \vec{w})
+= \begin{vmatrix}
+\vec{v} & \vec{w} \\
+\vec{u} \cdot \vec{v} & \vec{u} \cdot \vec{w}
+\end{vmatrix}$, para quaisquer $\vec{u}, \vec{v}$ e $\vec{w}$, podemos calcular primeiramente:
+\[
+\vec{u} \cdot \vec{v} = (-1) \cdot 0 + 3 \cdot (-4) + 0 \cdot 1 = -12
+\]
+\[
+\vec{u} \cdot \vec{w} = (-1) \cdot 1 + 3 \cdot 0 + 0 \cdot 1 = -1
+\]
+\[
+\vec{v} \cdot \vec{w} = 0 \cdot 1 + (-4) \cdot 0 + 1 \cdot 1 = 1
+\]
+e então substituir:
+\[
+\vec{u} \times (\vec{v} \times \vec{w})
+= \begin{vmatrix}
+\vec{v} & \vec{w} \\
+-12 & -1
+\end{vmatrix}
+= -\vec{v} +12 \vec{w}
+\]
+\[
+\vec{v} \times (\vec{w} \times \vec{u})
+= \begin{vmatrix}
+\vec{w} & \vec{u} \\
+1 & -12
+\end{vmatrix}
+= -12\vec{w} - \vec{u}
+\]
+\[
+\vec{w} \times (\vec{u} \times \vec{v})
+= \begin{vmatrix}
+\vec{u} & \vec{v} \\
+-1 & 1
+\end{vmatrix}
+= \vec{u} + \vec{v}
+\]
+Assim, a soma procurada é $(-\vec{v} + 12 \vec{w}) + (-12\vec{w} - \vec{u}) + (\vec{u} + \vec{v}) = \vec{0}$.
+
+\textbf{Nota:} também é possível expandir expressões como $-12\vec{w} - \vec{u} = -12(1,0,1) - (-1,3,0) = (-12,0,-12) - (-1,3,0) = (-11,-3,-12)$. Ao somar os vetores obtidos nos três casos, o resultado também será zero. A diferença é que terá feito mais cálculos, sem necessidade. De fato, não é preciso calcular numericamente nem mesmo os produtos escalares, pois o mesmo raciocínio funciona se desenvolver a soma utilizando as expressões $\vec{u} \cdot \vec{v}$, $\vec{u} \cdot \vec{w}$ e $\vec{v} \cdot \vec{w}$ diretamente, sem troca-las por números (verifique!).
+
+
+\item \textit{Encontre equações paramétricas da reta $r$ dada pela interseção do plano $-2x + 8y - 6z + 8 = 0$ com o plano $-x + 4y + 8z + 4 = 0$.}
+Todos os pontos $(x, y, z) \in r$ devem satisfazer simultaneamente às equações dos planos, isto é,
+\[
+\systeme{
+-2x + 8y - 6z + 8 = 0,
+ -x + 4y + 8z + 4 = 0}
+\]
+Da segunda equação, resulta que $x = 4y + 8z + 4$, e essa expressão pode ser substituída na primeira equação para obter que $-2(4y + 8z + 4) + 8y - 6z + 8 = 0$. Simplificando, conclui-se que $- 22z = 0$, o que significa que $z = 0$.
+
+Com isso, a segunda equação do sistema pode ser reescrita como $-x + 4y + 4 = 0$, o que implica que $x = 4y + 4$. Assim, a reta $r$ pode ser descrita pelas equações reduzidas (com variável independente $y$)
+\[
+\systeme*{
+x = 4y + 4,
+z = 0.
+}
+\]
+ou equivalentemente, pelas equações paramétricas
+\[
+\systeme*{
+x = 4t + 4,
+y = t,
+z = 0
+}
+\]
+que são obtidas considerando o ponto $A = (4, 0, 0) \in r$ e o vetor diretor $\vec{v} = (4, 1, 0)$ de $r$.
+
+\item \textit{ Seja $s$ a reta $\frac{x - 2}{4} = \frac{y - 3}{-3} = z + 1$. Dê um exemplo (com equações paramétricas) de uma reta $r_1 // s$, de uma reta $r_2$ concorrente com $s$ e de uma reta $r_3$ reversa com $s$ (explique suas escolhas). }
+
+A reta $s$ tem vetor diretor $\vec{v} = (4,-3,1)$.
+\begin{enumerate}
+
+\item Para obter uma reta $r_1 // s$, basta utilizar o mesmo vetor diretor $\vec{v}$ (ou um múltiplo dele), e qualquer ponto que não pertença a $s$ (pois os vetores diretores de retas paralelas são colineares, e elas só têm algum ponto em comum se forem coincidentes). Se escolhermos, por exemplo, $A = (0,0,0)$, é claro que suas coordenadas não satisfazem as equações simétricas de $s$, e portanto $A \not\in s$. As equações paramétricas da reta $r_1$ que passa por $A$ e que tem a direção de $\vec{v}$ são:
+\[
+\systeme*{
+x = 4t,
+y = -3t,
+z = t.
+}
+\]
+
+\item Para qualquer ponto $B \in s$ e qualquer vetor $\vec{u}$ que não seja colinear com $\vec{v}$, a reta que passa por $B$ e que tem a direção de $\vec{u}$ é concorrente com $s$. Assim, como $B = (2,3,-1) \in s$ e $\vec{u} = (1,0,0)$ não é múltiplo de $\vec{v}$, as equações paramétricas
+\[
+\systeme*{
+x = 2 + t,
+y = 3,
+z = -1
+}
+\]
+representam uma reta $r_2$, entre as infinitas retas que são concorrentes com $s$.
+
+\item Se no item anterior trocarmos o ponto $B \in s$ por um ponto $C$ que não pertence nem a $s$ nem a $r_2$, obteremos uma reta $r_3$ que não é paralela a $s$, e que também não possui um ponto em comum com $s$, ou seja, $r_3$ e $s$ serão retas reversas. A título de exemplo, pode-se considerar $C = A = (0,0,0)$, que não pertence a $s$ nem a $r_2$ (pois não satisfaz suas equações), e obter as equações paramétricas
+\[
+\systeme*{
+x = t,
+y = 0,
+z = 0
+}
+\]
+que representam o eixo $Ox$.
+\end{enumerate}
+
+
+\item \textit{ Calcule o ângulo entre a reta $r : \begin{cases}
+y = -x -1 \\
+z = 2
+\end{cases}$ e $s: x+1 = \dfrac{y-1}{-2} = z-1$. }
+
+O vetor $\vec{u} = (1,-2,2) - (0,-1,2) = (1,-1,0)$ é um vetor diretor da reta $r$, e o vetor $\vec{v} = (1,-2,1)$ é um vetor diretor de $s$. Então, o ângulo $\theta$ entre $r$ e $s$ é dado por
+\[
+\cos(\theta)
+= \frac{|\vec{u} \cdot \vec{v}|}{\norm{u} \cdot \norm{v}}
+= \frac{|1 \cdot 1 + (-1) \cdot (-2) + 0 \cdot 1|}
+       {\sqrt{1 + 1 + 0} \cdot \sqrt{1+4+1}}
+= \frac{|3|}{\sqrt{2} \cdot \sqrt{6}}
+= \frac{3}{2\sqrt{3}}
+= \frac{\sqrt{3}}{2}.
+\]
+Logo, $\theta = \operatorname{arccos}(\frac{\sqrt{3}}{2}) = \frac{\pi}{6}$, que corresponde a um ângulo de $30\degree$.
+
+\item \textit{ Forneça uma equação geral do plano que passa pelo ponto médio de $A = (-2,5,1)$ e $B = (4,-1,-7)$, e que além disso contém a reta $x = \frac{y}{-1} = z$. }
+
+O ponto médio de $A$ e $B$ é $M = \left(\frac{-2+4}{2}, \frac{5-1}{2}, \frac{1-7}{2}\right) = (1,2,-3)$. O vetor $\vec{n}$, normal do plano $\pi$ procurado, será ortogonal a um vetor diretor $\vec{v} = (1,-1,1)$ da reta. Além disso, $\vec{n}$ também será ortogonal a qualquer vetor $\vec{u}$ que tenha origem em um ponto arbitrário da reta (por exemplo, $(1,-1,1)$), e extremidade em $M$. Deste modo, podemos obter um vetor $\vec{n}$ fazendo o produto vetorial entre $\vec{v}$ e $\vec{u} = M - (1,-1,1) = (0,3,-4)$:
+
+\[
+\vec{v} \times \vec{u} =
+\begin{vmatrix}
+\vec{i} & \vec{j} & \vec{k} \\
+1 & -1 & 1 \\
+0 & 3 & -4
+\end{vmatrix}
+= (4 - 3) \vec{i} - (-4 - 0) \vec{j} + (3 - 0) \vec{k}
+= (1, 4, 3).
+\]
+Logo, a equação geral do plano tem a forma $x + 4y + 3z + d = 0$, e como $M \in \pi$, devemos ter $1 + 4 \cdot 2 + 3 \cdot(-3) + d = 0$, o que implica que $d = 0$. Portanto o plano tem equação geral $x + 4y + 3z = 0$.
+
+\item \textit{ Determine as equações reduzidas (com variável independente $x$) da reta $r$ que passa por $A = (1,2,4)$ e que é perpendicular ao plano $\frac{x}{2} + y - 2z - 6 = 0$. }
+
+O plano em questão é ortogonal ao vetor $\vec{n} = (\frac{1}{2}, 1, -2)$ (e também ao seu múltiplo $\vec{n}_1 = 2 \vec{n} = (1, 2, -4)$, caso prefira evitar frações). Utilizando o ponto $A$ e o vetor $\vec{n}$, conclui-se que a reta $r$ tem as seguintes equações paramétricas:
+\[
+\begin{cases}
+x = 1 + \frac{t}{2}\\
+y = 2 + t\\
+z = 4 - 2t
+\end{cases}
+\]
+Da primeira equação, resulta que $t = 2x - 2$, e então as demais equações podem ser reescritas assim:
+\[
+\begin{cases}
+y = 2 + (2x-2)\\
+z = 4 - 2(2x-2).
+\end{cases}
+\]
+Portanto, as equações reduzidas são
+\[
+\begin{cases}
+y = 2x\\
+z = -4x + 8.
+\end{cases}
+\]
+
+\end{enumerate}
+
+\end{document}
