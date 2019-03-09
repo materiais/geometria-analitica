@@ -120,7 +120,147 @@ s: \frac{x-1}{2} = y = \frac{z-4}{2}
 \end{multicols}
 \end{itemize}
 
-%\newpage
+\newpage
 \restoregeometry
-%\section*{Respostas e observações}
+\section*{Respostas e observações}
+\begin{enumerate}
+\item A altura do tetraedro com vértices $A=(3,3,3)$, $B=(-3,-3,3)$, $C=(3,-3,-3)$ e $D=(-3,3,-3)$, relativa à base $BCD$ é igual à distância do ponto $A$ ao plano $\pi$ definido pelos pontos $B$, $C$ e $D$. Se $P = (x,y,z)$ então $P \in \pi$ se, e somente se, $\vect{BP}=(x+3,y+3,z-3)$, $\vect{BC}=(6,0,-6)$ e $\vect{BD}=(0,6,-6)$ forem coplanares, isto é,
+\[
+0=\begin{vmatrix}
+x+3 & y+3 & z-3\\
+  6 &   0 &  -6\\
+  0 &   6 &  -6
+\end{vmatrix}
+= 36x+36y+36z+108.
+\]
+Assim, tem-se $\pi: x+y+z+3=0$ e $\vec{n}=(1,1,1)$ é um vetor normal a $\pi$. Consequentemente,
+\[
+d(A,\pi)
+= \frac{|3+3+3+3|}{\sqrt{1^2+1^2+1^2}}
+= \frac{12}{\sqrt{3}}
+= 4 \sqrt{3}.
+\]
+
+\item Considerando que a reta $r: \frac{x}{4} = \frac{y-1/2}{3} = \frac{z-3/2}{2}$ tem um vetor diretor $\vec{u}=(4,3,2)$ e que a reta $s: \frac{x}{-4} = \frac{y+1/2}{6} = z+1$ tem um vetor diretor $\vec{v}=(-4,6,1)$, e que nenhum deles é um múltiplo escalar do outro, conclui-se que $r$ e $s$ não são paralelas. Neste caso, tomando $P_1 = (0,1/2,3/2) \in r$ e $P_2 = (0,-1/2,-1) \in s$, a distância entre as retas é $d(r, s)
+= \frac{ \left| ( \vec{u}, \vec{v}, \vect{P_1P_2} ) \right| }
+     { || \vec{u} \times \vec{v} || }
+$, em que
+\[
+( \vec{u}, \vec{v}, \vect{P_1P_2} )
+= \begin{vmatrix}
+ 4 &  3 &  2\\
+-4 &  6 &  1\\
+ 0 & -1 & -5/2
+\end{vmatrix}
+=-78
+\]
+e
+\[
+\vec{u} \times \vec{v}
+= \begin{vmatrix}
+\vec{i} & \vec{j} & \vec{k}\\
+ 4 & 3 & 2\\
+-4 & 6 & 1
+\end{vmatrix}
+=(-9, -12, 36)
+\]
+Portanto,
+\[
+d(r, s)
+= \frac{ \left| -78 \right| }
+     { || (-9, -12, 36) || }
+= \frac{ \left| -2\cdot 3 \cdot 13 \right| }
+     { 3 \cdot || (-3, -4, 12) || }
+= \frac{ 2 \cdot 13 }
+     { \sqrt{9+16+144} }
+=
+\frac{ 2 \cdot 13 }
+     { 13 }
+= 2.
+\]
+
+\item Como $\vec{u}=(1,\frac{1}{2},1)$ é um vetor diretor da reta $r: \begin{cases}
+y = \frac{x}{2} - 3\\
+z= x - 4
+\end{cases}$ e $\vec{v}=(2,1,2) = 2 \cdot \vec{u}$ é um vetor diretor da reta $s: \frac{x-1}{2} = y = \frac{z-4}{2}$, conclui-se que $r$ e $s$ são paralelas. Neste caso, tomando $P_0 = (0, -3, -4) \in r$ e $P_1 = (1, 0, 4) \in s$, tem-se
+\[
+d(r,s)
+= d(P_0,s)
+= \frac{|| \vec{v} \times \vect{P_1 P_0} ||}{|| \vec{v} ||},
+\]
+em que
+\[
+\vec{v} \times \vect{P_1 P_0}
+=(2,1,2) \times (-1,-3,-8)
+=\begin{vmatrix}
+\vec{i} & \vec{j} & \vec{k}\\
+ 2 &  1 &  2\\
+-1 & -3 & -8
+\end{vmatrix}
+= (-2, 14, -5)
+\]
+e
+\[
+|| \vec{v} || = \sqrt{2^2+1^2+2^2} = 3.
+\]
+Portanto,
+\[
+d(r,s)
+= \frac{|| (-2, 14, -5) || }{3}
+= \frac{\sqrt{4+196+25} }{3}
+= \frac{15}{3}
+= 5.
+\]
+
+\item \textit{Determine a equação, o foco e a reta diretriz da parábola cujo vértice é o ponto $(3,-1)$, cujo eixo de simetria é a reta $y+1=0$ e que passa pelo ponto $(-6,5)$.}
+
+Como o eixo de simetria da parábola é horizontal, e ela tem vértice no ponto $V = (3,-1)$, sua equação tem a forma padrão $(y-(-1))^2 = 2p(x-3)$. Além disso, como a parábola passa pelo ponto $P=(-6,5)$, o valor de $p \in \mathbb{R}$ deve ser tal que
+\[
+(5-(-1))^2 = 2p(-6-3)
+\Leftrightarrow
+36 = -18p
+\Leftrightarrow
+p = -2.
+\]
+Assim, a equação é $(y+1)^2 = -4(x-3)$. Neste caso, como o foco está sobre o eixo de simetria $y=-1$ e sua distância ao vértice é a metade da distância $p$ entre o foco e a reta diretriz, tem-se $F=(3+\frac{p}{2},-1) = (3-1,-1) = (2,-1)$. A reta diretriz é $d: x = 3-\frac{p}{2} = 3 + 1 = 4$, ou seja, $d: x-4 = 0$.
+
+\item A equação $9 x^2-72 x+25 y^2+50 y-56 = 0$ pode ser reescrita do seguinte modo:
+\begin{align*}
+9 x^2-72 x+25 y^2+50 y-56 = 0
+& \Leftrightarrow
+9 (x^2 - 8x) + 25(y^2 +2y) - 56 = 0\\
+& \Leftrightarrow
+9 ((x-4)^2 - 16) + 25((y+1)^2 -1) - 56 = 0\\
+& \Leftrightarrow
+9(x-4)^2 + 25(y+1)^2 = 225\\
+& \Leftrightarrow
+\frac{(x-4)^2}{25} + \frac{(y+1)^2}{9} = 1
+\end{align*}
+Assim, para esta elipse, $a=5$ e $c=\sqrt{25-9}=4$, de modo que sua excentricidade é $e_1 = \frac{4}{5} = 0,8$.
+
+Por outro lado, no caso da elipse $\frac{(x-4)^2}{25} + \frac{(y+1)^2}{169} = 1$, tem-se $a = 13$ e $c=\sqrt{169-15} = 12$, e portanto sua excentricidade é $e_2 = \frac{12}{13} \approx 0,9 > 0,8 = e_1$.
+
+\item Como o centro $C$ da hipérbole é o ponto médio dos vértices, tem-se
+\[
+C = \left(\frac{-2+4}{2},\frac{1+1}{2}\right) = (1,1).
+\]
+Além disso, $2a = d(A_1,A_2) = \sqrt{(4-(-2))^2+(1-1)^2} = 6$, ou seja, $a = 3$ e como os vértices estão sobre uma reta horizontal, a equação terá a forma padrão $\frac{(x-1)^2}{3^2}-\frac{(y-1)^2}{b^2}=1$. Como a hipérbole passa por $P=(-5,4)$, tem-se
+\[
+\frac{(-5-1)^2}{3^2}-\frac{(4-1)^2}{b^2}=1
+\Leftrightarrow
+\frac{36}{9}-\frac{9}{b^2}=1
+\Leftrightarrow
+b^2=3
+\]
+
+Portanto a hipérbole tem equação $\frac{(x-1)^2}{9} + \frac{(y-1)^2}{3} = 1$.
+
+Finalmente, como $c = \sqrt{a^2+b^2}$, tem-se $c = \sqrt{9+3} = \sqrt{12}= 2\sqrt{3}$ e consequentemente os focos são
+$F_1 = (1+2\sqrt{3},1)$ e
+$F_2 = (1-2\sqrt{3},1)$.
+
+
+
+\end{enumerate}
+
 \end{document}
