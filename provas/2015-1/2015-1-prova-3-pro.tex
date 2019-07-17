@@ -96,35 +96,12 @@ s: \frac{x-1}{2} = y = \frac{z-4}{2}
 \item (2,0 pontos) Obtenha os focos e a equação da hipérbole que possui vértices $A_1=(-2,1)$ e $A_2 = (4,1)$, e que contém o ponto $P = (-5,4)$.
 \end{enumerate}
 
-\section*{Lembrete}
-%Nas fórmulas a seguir, $P_0$, $P_1$, $P_2$ são pontos, $r$, $s$ são retas, $\vec{u}$, $\vec{v}$ são vetores e $\pi$ é um plano:
-\begin{itemize}\footnotesize
-\item $d(P_1, P_2) =
-\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2 + (z_2-z_1)^2}$
-\begin{multicols}{3}
-\item $d(P_0, r) =
-\frac{ \norm{ \vec{v} \times \vect{P_0P_1} } }
-     { \norm{\vec{v}} }$
-\item $d(r, s) =
-\frac{ \left| ( \vec{u}, \vec{v}, \vect{P_1P_2} ) \right| }
-     { || \vec{u} \times \vec{v} || }$
-\item $d(P_0, \pi) =
-\frac{ \left| ax_0 + by_0 + cz_0 + d \right| }
-     { \sqrt{a^2 + b^2 + c^2} }$
-\item $(x-h)^2 = 2p(y-k)$
-\item $(y-k)^2 = 2p(x-h)$
-\item $\dfrac{(x-h)^2}{a^2} + \dfrac{(y-k)^2}{b^2} = 1$
-\item $\dfrac{(x-h)^2}{b^2} + \dfrac{(y-k)^2}{a^2} = 1$
-\item $\dfrac{(x-h)^2}{a^2} - \dfrac{(y-k)^2}{b^2} = 1$
-\item $\dfrac{(y-k)^2}{a^2} - \dfrac{(x-h)^2}{b^2} = 1$
-\end{multicols}
-\end{itemize}
-
 \newpage
 \restoregeometry
 \section*{Respostas e observações}
 \begin{enumerate}
-\item A altura do tetraedro com vértices $A=(3,3,3)$, $B=(-3,-3,3)$, $C=(3,-3,-3)$ e $D=(-3,3,-3)$, relativa à base $BCD$ é igual à distância do ponto $A$ ao plano $\pi$ definido pelos pontos $B$, $C$ e $D$. Se $P = (x,y,z)$ então $P \in \pi$ se, e somente se, $\vect{BP}=(x+3,y+3,z-3)$, $\vect{BC}=(6,0,-6)$ e $\vect{BD}=(0,6,-6)$ forem coplanares, isto é,
+\item A altura do tetraedro com vértices $A=(3,3,3)$, $B=(-3,-3,3)$, $C=(3,-3,-3)$ e $D=(-3,3,-3)$, relativa à base $BCD$ é igual à distância do ponto $A$ ao plano $\pi$ definido pelos pontos $B$, $C$ e $D$.
+Esse plano é formado pelos pontos $P = (x,y,z)$ tais que os vetores $\vect{BP}=(x+3,y+3,z-3)$, $\vect{BC}=(6,0,-6)$ e $\vect{BD}=(0,6,-6)$ são coplanares, o que ocorre se, e somente se, o produto misto entre eles for zero:
 \[
 0=\begin{vmatrix}
 x+3 & y+3 & z-3\\
@@ -133,6 +110,7 @@ x+3 & y+3 & z-3\\
 \end{vmatrix}
 = 36x+36y+36z+108.
 \]
+
 Assim, tem-se $\pi: x+y+z+3=0$ e $\vec{n}=(1,1,1)$ é um vetor normal a $\pi$. Consequentemente,
 \[
 d(A,\pi)
@@ -182,7 +160,7 @@ d(r, s)
 \item Como $\vec{u}=(1,\frac{1}{2},1)$ é um vetor diretor da reta $r: \begin{cases}
 y = \frac{x}{2} - 3\\
 z= x - 4
-\end{cases}$ e $\vec{v}=(2,1,2) = 2 \cdot \vec{u}$ é um vetor diretor da reta $s: \frac{x-1}{2} = y = \frac{z-4}{2}$, conclui-se que $r$ e $s$ são paralelas. Neste caso, tomando $P_0 = (0, -3, -4) \in r$ e $P_1 = (1, 0, 4) \in s$, tem-se
+\end{cases}$ e $\vec{v}=(2,1,2) = 2 \cdot \vec{u}$ é um vetor diretor da reta $s: \frac{x-1}{2} = y = \frac{z-4}{2}$, conclui-se que $r$ e $s$ são paralelas. Neste caso, a distância entre elas é igual à distância de um ponto qualquer de $r$ à reta $s$. Tomando, por exemplo, $P_0 = (0, -3, -4) \in r$ e $P_1 = (1, 0, 4) \in s$, tem-se
 \[
 d(r,s)
 = d(P_0,s)
@@ -212,9 +190,7 @@ d(r,s)
 = 5.
 \]
 
-\item \textit{Determine a equação, o foco e a reta diretriz da parábola cujo vértice é o ponto $(3,-1)$, cujo eixo de simetria é a reta $y+1=0$ e que passa pelo ponto $(-6,5)$.}
-
-Como o eixo de simetria da parábola é horizontal, e ela tem vértice no ponto $V = (3,-1)$, sua equação tem a forma padrão $(y-(-1))^2 = 2p(x-3)$. Além disso, como a parábola passa pelo ponto $P=(-6,5)$, o valor de $p \in \mathbb{R}$ deve ser tal que
+\item Como o eixo de simetria da parábola é horizontal, e ela tem vértice no ponto $V = (3,-1)$, sua equação tem a forma padrão $(y-(-1))^2 = 2p(x-3)$. Além disso, como a parábola passa pelo ponto $P=(-6,5)$, o valor de $p \in \mathbb{R}$ deve ser tal que
 \[
 (5-(-1))^2 = 2p(-6-3)
 \Leftrightarrow
