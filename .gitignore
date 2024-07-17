@@ -1,16 +1,7 @@
 # Output files
-provas/2015-1/2015-1-prova-1-pro.pdf
-provas/2015-1/2015-1-prova-2-pro.pdf
-provas/2015-1/2015-1-prova-3-pro.pdf
-provas/2015-1/2015-1-prova-4-pro.pdf
-provas/2015-1/2015-1-prova-1-civ.pdf
-provas/2015-1/2015-1-prova-2-civ.pdf
-provas/2015-1/2015-1-prova-3-civ.pdf
-provas/2015-1/2015-1-prova-4-civ.pdf
-provas/2016-2/2016-2-prova-1-pro.pdf
-provas/2016-2/2016-2-prova-2-pro.pdf
-provas/2016-2/2016-2-prova-3-pro.pdf
-provas/2016-2/2016-2-prova-4-pro.pdf
+provas/2015-1/2015-1-prova-[1-4]-pro.pdf
+provas/2015-1/2015-1-prova-[1-4]-civ.pdf
+provas/2016-2/2016-2-prova-[1-4]-pro.pdf
 
 ## Core latex/pdflatex auxiliary files:
 *.aux
