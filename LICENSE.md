@@ -1,1 +1,1 @@
-Este é um material de acesso livre, distribuído sob os termos da licença [Creative Commons Atribuição-CompartilhaIgual 4.0 Internacional (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/deed.pt_BR), a não ser quando explicitamente especificado o contrário.
+Este é um material de acesso livre, distribuído sob os termos da licença [Creative Commons BY-SA 4.0 (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/deed.pt_BR), a não ser quando explicitamente especificado o contrário.
